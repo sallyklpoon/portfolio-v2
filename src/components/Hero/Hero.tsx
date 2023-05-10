@@ -3,59 +3,62 @@ import {
     Grid,
     Text,
     Image,
-    HStack,
-    GridItem
+    Flex,
+    GridItem,
+    Heading,
+    SlideFade
 } from '@chakra-ui/react';
 
 const Hero: React.FC = () => {
 
     return (
-        <Grid
-            templateRows='1fr 2fr 1fr'
-            templateColumns='2fr 1fr 2fr'
-            templateAreas={`"greeting . ."
+        <SlideFade in={true} offsetY='20px'>
+            <Grid
+                templateRows='1fr 1fr 2fr 1fr'
+                templateColumns='2fr 1fr 2fr'
+                templateAreas={`". . ."
+                            "greeting . ."
                             ". . image"
                             ". title title"`}
-            gap={4}
-            h='100vh'
-            w='100%'
-        >
-            <GridItem pl='2' bg='orange.300' area={'greeting'}>
-                Greeting
-            </GridItem>
-            <GridItem pl='2' bg='green.300' area={'image'}>
-                Image
-            </GridItem>
-            <GridItem pl='2' bg='blue.300' area={'title'}>
-                Title
-            </GridItem>
+                gap={4}
+                h='75vh'
+                w='100%'
+            >
 
-            {/* 
-                <Text
-                    fontSize='6xl'
-                >
-                    Hello, my name is Sally!
-                </Text>
-                <Image
-                    borderRadius='full'
-                    boxSize='100px'
-                    fit='cover'
-                    src='https://i.imgur.com/HHjXqmi.jpg'
-                    alt='Sally Poon'
-                    _hover={{
-                        transform: 'scale(5.0)',
-                        transitionDuration: '0.2s',
-                        transitionTimingFunction: "ease-in-out"
-                    }}
-                />
+                <GridItem pl='2' area={'greeting'}>
+                    <Text fontSize='6xl'>
+                        Hello, my name is
+                    </Text>
+                    <Heading fontSize='6xl'>
+                        Sally! 👋
+                    </Heading>
+                </GridItem>
 
+                <GridItem pl='2' area={'image'}>
+                    <Flex align='center' justify='center'>
+                        <Image
+                            borderRadius='full'
+                            boxSize='20rem'
+                            fit='cover'
+                            src='https://i.imgur.com/HHjXqmi.jpg'
+                            alt='Sally Poon'
+                            _hover={{
+                                transform: 'scale(2.0)',
+                                transitionDuration: '0.2s',
+                                transitionTimingFunction: "ease-in-out"
+                            }}
+                        />
+                    </Flex>
+                </GridItem>
 
-            <Text fontSize={'6xl'}>
+                <GridItem pl='2' area={'title'}>
+                    <Text fontSize={'6xl'}>
+                        I'm a Software Developer based in Vancouver, BC.
+                    </Text>
+                </GridItem>
 
-                I'm a Software Developer based in Vancouver, BC.
-            </Text> */}
-
-        </Grid>
+            </Grid>
+        </SlideFade>
     )
 };
 
