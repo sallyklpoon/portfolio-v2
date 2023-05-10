@@ -12,7 +12,10 @@ import {
 const Hero: React.FC = () => {
 
     return (
-        <SlideFade in={true} offsetY='20px'>
+        <SlideFade
+            in={true}
+            offsetY='20rem'
+        >
             <Grid
                 templateRows='1fr 1fr 2fr 1fr'
                 templateColumns='2fr 1fr 2fr'
