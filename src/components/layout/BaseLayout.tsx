@@ -10,9 +10,13 @@ type layoutProps = {
 export const BaseLayout: React.FC<layoutProps> = ({ children }) => {
     return (
         <Box
-            backgroundImage='url(https://i.imgur.com/KubWPyu.png)'
+            p='5'
+            w="100vw"
             minH="100vh"
-            w="100%"
+            backgroundSize='cover'
+            backgroundRepeat='no-repeat'
+            backgroundImage='url(https://i.imgur.com/KubWPyu.png)'
+
         >
             {children}
         </Box>
