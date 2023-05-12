@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
                 templateRows='1fr 1fr 2fr 1fr'
                 templateColumns='2fr 1fr 2fr'
                 templateAreas={`". . ."
-                            "greeting . ."
+                            "greeting . image"
                             ". . image"
                             ". title title"`}
                 gap={4}
@@ -30,16 +30,17 @@ const Hero: React.FC = () => {
 
                 <GridItem pl='2' area={'greeting'}>
                     <Text fontSize='6xl'>
-                        Hello, my name is
+                        HELLO, MY NAME IS
                     </Text>
                     <Heading fontSize='6xl'>
-                        Sally! 👋
+                        SALLY! 👋
                     </Heading>
                 </GridItem>
 
                 <GridItem pl='2' area={'image'}>
                     <Flex align='center' justify='center'>
                         <Image
+                            mb={10}
                             borderRadius='full'
                             boxSize='20rem'
                             fit='cover'
