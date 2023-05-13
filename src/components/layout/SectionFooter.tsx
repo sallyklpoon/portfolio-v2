@@ -1,8 +1,12 @@
 import React from 'react';
 import { Box } from '@chakra-ui/react';
 
-const SectionFooter: React.FC = () => {
-    return <Box h='5rem'/>;
+type sectionFooterProps = {
+    id?: string;
+}
+
+const SectionFooter: React.FC<sectionFooterProps> = ({ id }) => {
+    return <Box id={id} h='5rem'/>;
 };
 
 export default SectionFooter;

@@ -6,7 +6,6 @@ import {
 import projectsOverviews from '../../config/data/projects.json'
 import ProjectCard from './ProjectCard';
 import SectionHeader from '../layout/SectionHeader';
-import SectionFooter from '../layout/SectionFooter';
 
 const Works: React.FC = () => {
     return (
@@ -29,8 +28,6 @@ const Works: React.FC = () => {
                     }
                 </Flex>
             </Center>
-
-            <SectionFooter />
         </>
     );
 };

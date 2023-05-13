@@ -2,8 +2,9 @@ import React from 'react';
 import {
     HStack,
     Text,
-    Divider 
+    Divider
 } from '@chakra-ui/react';
+import SectionFooter from './SectionFooter';
 
 
 type SectionHeaderProps = {
@@ -13,21 +14,23 @@ type SectionHeaderProps = {
 
 const SectionHeader: React.FC<SectionHeaderProps> = ({ title, id }) => {
     return (
-        <HStack
-            id={id}
-            m='20'
-        >
-            <Text
-                mr='5'
-                fontSize='2xl'
-                textTransform='uppercase'
+        <>
+            <SectionFooter id={id} />
+            <HStack
+                m='20'
             >
-                {title}
-            </Text>
-            <Divider
-                borderColor='black'
-            />
-        </HStack>
+                <Text
+                    mr='5'
+                    fontSize='2xl'
+                    textTransform='uppercase'
+                >
+                    {title}
+                </Text>
+                <Divider
+                    borderColor='black'
+                />
+            </HStack>
+        </>
     );
 };
 
