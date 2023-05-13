@@ -7,7 +7,7 @@ import {
     Text,
 } from '@chakra-ui/react';
 import SectionFooter from '../layout/SectionFooter';
-import AboutAccordion from './AboutAccordion';
+import AboutAccordion from './AboutAccordion/AboutAccordion';
 
 const About: React.FC = () => {
     return (
@@ -24,9 +24,12 @@ const About: React.FC = () => {
 
                     <Box maxW='50%'>
                         <Text fontSize='3xl' mb={10}>
-                            I'm currently a Software Engineer at Diligent.
-                            With a major in Psychology, I enjoy putting the user first in projects and features I work on.
-                            I'm equally as passionate about creating a positive community around me and growing as a developer.
+                        As a Software Engineer at Diligent, 
+                        I bring a unique perspective to my work thanks to my academic background in Psychology. 
+                        I believe in putting the user first in every project and feature I work on, ensuring that 
+                        the end product is both functional and intuitive. Beyond my technical skills, I am equally 
+                        passionate about fostering a positive community in the workplace and continuously growing 
+                        as a developer.
                         </Text>
 
                         <AboutAccordion />
