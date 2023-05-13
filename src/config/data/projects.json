@@ -1,41 +1,34 @@
 [
     {
-        "id": 1,
         "name": "Sprout",
-        "date": "May 2021 - Present",
+        "description": "A social gardening application  to connect with their community and learn more about the ecosystem around them.",
         "image_url": "https://i.imgur.com/dkVAVDF.png",
-        "link": "sprout"
+        "link": "https://github.com/nejohnston/Sprout"
     }, 
     {
-        "id": 2,
         "name": "CapWise",
-        "date": "January - April 2021",
+        "description": "CapWise introduces a crowd occupancy counter for retail spaces that will make use of counted data for staff scheduling and marketing purposes.",
         "image_url": "https://i.imgur.com/WuRUVT4.png",
-        "link": "capwise"
-
+        "link": "https://github.com/sallyklpoon/CapWise"
     },
     {
-        "id": 3,
         "name": "Namu",
-        "date": "March 2021",
+        "description": "Featuring in-house made pixel art and 8-bit tunes, this pixel-game takes players on a journey with the baby blue whale, Namu, who is searching for his home.",
         "image_url": "https://i.imgur.com/YasdYYY.png",
-        "link": "namu"
-
+        "link": "https://github.com/sallyklpoon/Namu"
     },
     {
-        "id": 4,
         "name": "Bóriya",
-        "date": "March 2021",
+        "description": "Begin your adventure as a being in the forest of Bóriya. This text-based adventure is inspired by Dungeons & Dragons. Players will have to train by battling monsters until they are strong enough to defeat the void that has consumed the forest.",
         "image_url": "https://i.imgur.com/Be7sxAI.png",
-        "link": "text-adventure"
+        "link": "https://github.com/sallyklpoon/Boriya-text-based-adventure"
 
     },
     {
-        "id": 5,
         "name": "Olà Chat",
-        "date": "March 2021",
+        "description": "A front-end prototype of an anonymous peer-support chat app created with peer support in mind, providing people a space to speak with peers who have similar identities and experiences.",
         "image_url": "https://i.imgur.com/IjGuw0O.jpg",
-        "link": "ola-chat"
+        "link": "https://github.com/sallyklpoon/ola-chat"
 
     }
 ]

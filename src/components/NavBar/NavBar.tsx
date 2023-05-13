@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
             <Spacer />
 
             <HStack spacing={3}>
-                <Link>
+                <Link href='#work'>
                     <Text fontSize='xl'>Work</Text>
                 </Link>
 

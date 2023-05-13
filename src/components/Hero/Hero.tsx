@@ -11,6 +11,8 @@ import {
 
 const Hero: React.FC = () => {
 
+    const isLargeScreen = window.matchMedia("(min-width: 600px)").matches;
+
     return (
         <SlideFade
             in={true}
@@ -29,7 +31,7 @@ const Hero: React.FC = () => {
             >
 
                 <GridItem pl='2' area={'greeting'}>
-                    <Text fontSize='6xl'>
+                    <Text fontSize={'6xl'}>
                         HELLO, MY NAME IS
                     </Text>
                     <Heading fontSize='6xl'>
