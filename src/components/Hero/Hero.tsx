@@ -11,7 +11,7 @@ import {
 
 const Hero: React.FC = () => {
 
-    const isLargeScreen = window.matchMedia("(min-width: 600px)").matches;
+    // const isLargeScreen = window.matchMedia("(min-width: 600px)").matches;
 
     return (
         <SlideFade
@@ -19,13 +19,13 @@ const Hero: React.FC = () => {
             offsetY='20rem'
         >
             <Grid
-                m='15'
+                m='10'
                 templateRows='1fr 1fr 2fr 1fr'
                 templateColumns='2fr 1fr 2fr'
                 templateAreas={`". . ."
-                            "greeting . image"
-                            ". . image"
-                            ". title title"`}
+                            "greeting greeting image"
+                            ".        .        image"
+                            ".        title    title"`}
                 gap={4}
                 h='75vh'
                 w='100%'
@@ -33,11 +33,11 @@ const Hero: React.FC = () => {
             >
 
                 <GridItem pl='2' area={'greeting'}>
-                    <Text fontSize={'6xl'}>
-                        HELLO, MY NAME IS
+                    <Text fontSize={'6xl'} textTransform='uppercase'>
+                        Hello, my name is
                     </Text>
-                    <Heading fontSize='6xl'>
-                        SALLY! 👋
+                    <Heading fontSize='6xl' textTransform='uppercase'>
+                        Sally! 👋
                     </Heading>
                 </GridItem>
 
