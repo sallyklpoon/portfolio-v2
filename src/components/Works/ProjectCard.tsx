@@ -5,7 +5,9 @@ import {
     CardBody,
     CardFooter,
     Text,
-    Heading
+    Heading,
+    Image,
+    Box
 } from '@chakra-ui/react'
 
 type projectCardType = {
@@ -15,12 +17,12 @@ type projectCardType = {
 const ProjectCard: React.FC<projectCardType> = ({ project }) => {
     return (
         <Card
-            h='xs'
+            h='sm'
             w='sm'
             backgroundColor='whiteAlpha.300'
             _hover={{
                 transform: 'scale(1.1)',
-                transitionDuration: '0.2s',
+                transitionDuration: '0.25s',
                 transitionTimingFunction: "ease-in-out"
             }}
         >
@@ -31,7 +33,15 @@ const ProjectCard: React.FC<projectCardType> = ({ project }) => {
             </CardHeader>
             <CardBody>
                 <Text fontSize='sm'>{project.description}</Text>
+
             </CardBody>
+
+            <Box 
+                h='50%'
+                backgroundImage={project.image_url}
+                backgroundSize='cover'
+                
+            />
         </Card>
     );
 };

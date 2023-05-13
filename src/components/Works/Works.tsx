@@ -1,26 +1,25 @@
 import React from 'react';
 import {
-    Box,
     Center,
     Grid,
-    Text,
-    Divider,
-    HStack
+    Flex
 } from '@chakra-ui/react';
 import projectsOverviews from '../../config/data/projects.json'
 import ProjectCard from './ProjectCard';
-import SectionHeader from '../SectionHeader';
+import SectionHeader from '../layout/SectionHeader';
+import SectionFooter from '../layout/SectionFooter';
 
 const Works: React.FC = () => {
     return (
-        <Box>
+        <>
             <SectionHeader title='Recent Projects' id='work' />
 
             <Center>
-
-                <Grid
+                <Flex
+                    maxW='85%'
                     gap={6}
-                    gridTemplateColumns='repeat(3, 1fr)'
+                    wrap='wrap'
+                    alignItems='center'
                 >
                     {
                         projectsOverviews.map((project) => {
@@ -29,10 +28,11 @@ const Works: React.FC = () => {
                             )
                         })
                     }
-                </Grid>
+                </Flex>
             </Center>
-        </Box>
 
+            <SectionFooter />
+        </>
     );
 };
 

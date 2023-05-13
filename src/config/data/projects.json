@@ -13,13 +13,13 @@
     },
     {
         "name": "Namu",
-        "description": "Featuring in-house made pixel art and 8-bit tunes, this pixel-game takes players on a journey with the baby blue whale, Namu, who is searching for his home.",
+        "description": "Featuring in-house made pixel art and 8-bit tunes, this pixel-game takes players on a journey with the baby blue whale, Namu, searching for his home.",
         "image_url": "https://i.imgur.com/YasdYYY.png",
         "link": "https://github.com/sallyklpoon/Namu"
     },
     {
         "name": "Bóriya",
-        "description": "Begin your adventure as a being in the forest of Bóriya. This text-based adventure is inspired by Dungeons & Dragons. Players will have to train by battling monsters until they are strong enough to defeat the void that has consumed the forest.",
+        "description": "A text-based adventure inspired by Dungeons & Dragons. Players will explore the forest of Bóriya defeat the void that has consumed the land.",
         "image_url": "https://i.imgur.com/Be7sxAI.png",
         "link": "https://github.com/sallyklpoon/Boriya-text-based-adventure"
 

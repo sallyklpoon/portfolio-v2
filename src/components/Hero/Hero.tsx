@@ -28,6 +28,7 @@ const Hero: React.FC = () => {
                 gap={4}
                 h='75vh'
                 w='100%'
+                px='20'
             >
 
                 <GridItem pl='2' area={'greeting'}>

@@ -15,7 +15,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({ title, id }) => {
     return (
         <HStack
             id={id}
-            p='20'
+            m='20'
         >
             <Text
                 mr='5'
@@ -25,9 +25,6 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({ title, id }) => {
                 {title}
             </Text>
             <Divider
-                size='md'
-                variant='solid'
-                borderRadius='full'
                 borderColor='black'
             />
         </HStack>
