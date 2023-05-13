@@ -3,10 +3,8 @@ import {
     Card,
     CardHeader,
     CardBody,
-    CardFooter,
     Text,
     Heading,
-    Image,
     Box
 } from '@chakra-ui/react'
 

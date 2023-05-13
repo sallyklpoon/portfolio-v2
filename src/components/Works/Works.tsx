@@ -1,7 +1,6 @@
 import React from 'react';
 import {
     Center,
-    Grid,
     Flex
 } from '@chakra-ui/react';
 import projectsOverviews from '../../config/data/projects.json'

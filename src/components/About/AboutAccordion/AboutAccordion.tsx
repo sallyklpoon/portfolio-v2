@@ -1,16 +1,9 @@
 import React from 'react';
 import {
-    Box,
     Accordion,
-    AccordionItem,
-    AccordionButton,
-    AccordionPanel,
-    AccordionIcon,
-    Grid,
     HStack,
     Text
 } from '@chakra-ui/react';
-import { AddIcon, MinusIcon } from '@chakra-ui/icons';
 import AccordionItemWrapper from '../../layout/AccordionItemWrapper';
 import AccordionDetailItem from './AccordionDetailItem';
 
@@ -68,8 +61,28 @@ const AboutAccordion: React.FC = () => {
                 />
             </AccordionItemWrapper>
 
-
-
+            <AccordionItemWrapper title='Recognition'>
+                <AccordionDetailItem
+                    title='BCIT Alumni Association Award'
+                    date='Dec 2022'
+                    description='British Columbia Institute of Technology Scholarships and Awards'
+                />
+                <AccordionDetailItem
+                    title='3rd place - SAP Invitational Hackathon'
+                    date='Sep 2022'
+                    description='SAP'
+                />
+                <AccordionDetailItem
+                    title='1st place - Diligent Vancouver HackFest'
+                    date='July 2022'
+                    description='Diligent Corporation'
+                />
+                <AccordionDetailItem
+                    title='Distinguished Set Rep Award'
+                    date='May 2022'
+                    description='BCIT Student Association'
+                />
+            </AccordionItemWrapper>
         </Accordion>
     );
 };
