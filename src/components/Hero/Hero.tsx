@@ -19,6 +19,7 @@ const Hero: React.FC = () => {
             offsetY='20rem'
         >
             <Grid
+                m='15'
                 templateRows='1fr 1fr 2fr 1fr'
                 templateColumns='2fr 1fr 2fr'
                 templateAreas={`". . ."
@@ -60,7 +61,7 @@ const Hero: React.FC = () => {
 
                 <GridItem pl='2' area={'title'}>
                     <Text fontSize={'6xl'}>
-                        I'm a Software Developer based in Vancouver, BC.
+                        I'm a Software Engineer based in Vancouver, BC.
                     </Text>
                 </GridItem>
 
