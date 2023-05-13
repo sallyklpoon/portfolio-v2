@@ -32,7 +32,7 @@ const NavBar: React.FC = () => {
                     <Text fontSize='xl'>About</Text>
                 </Link>
 
-                <Link>
+                <Link href='#contact'>
                     <Text fontSize='xl'>Contact</Text>
                 </Link>
             </HStack>

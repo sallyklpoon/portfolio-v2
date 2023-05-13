@@ -14,7 +14,6 @@ export const BaseLayout: React.FC<layoutProps> = ({ children }) => {
         <NavBar />
         <Box
             pt='15'
-            px='12'
             w="100vw"
             minH="100vh"
             as='main'

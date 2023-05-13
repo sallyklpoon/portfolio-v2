@@ -34,10 +34,10 @@ const Hero: React.FC = () => {
 
                 <GridItem pl='2' area={'greeting'}>
                     <Text fontSize={'6xl'} textTransform='uppercase'>
-                        Hello, my name is
+                        Hello, I'm
                     </Text>
                     <Heading fontSize='6xl' textTransform='uppercase'>
-                        Sally! 👋
+                        Sally!
                     </Heading>
                 </GridItem>
 
@@ -64,7 +64,6 @@ const Hero: React.FC = () => {
                         I'm a Software Engineer based in Vancouver, BC.
                     </Text>
                 </GridItem>
-
             </Grid>
         </SlideFade>
     )
