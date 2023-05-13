@@ -15,7 +15,6 @@ import AboutAccordion from './AboutAccordion/AboutAccordion';
 const About: React.FC = () => {
     return (
         <>
-
             <SectionHeader title='About' id='about' />
 
             <Box mx='20'>

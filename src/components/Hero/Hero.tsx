@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
                             src='https://i.imgur.com/HHjXqmi.jpg'
                             alt='Sally Poon'
                             _hover={{
-                                transform: 'scale(2.0)',
+                                transform: 'scale(1.5)',
                                 transitionDuration: '0.2s',
                                 transitionTimingFunction: "ease-in-out"
                             }}

@@ -28,7 +28,7 @@ const NavBar: React.FC = () => {
                     <Text fontSize='xl'>Work</Text>
                 </Link>
 
-                <Link href='about'>
+                <Link href='#about'>
                     <Text fontSize='xl'>About</Text>
                 </Link>
 
