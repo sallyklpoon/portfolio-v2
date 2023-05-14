@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from '@chakra-ui/react';
+import { Text, useMediaQuery } from '@chakra-ui/react';
 
 type accordionDetailItemtype = {
     title: string;
@@ -8,11 +8,13 @@ type accordionDetailItemtype = {
 }
 
 const AccordionDetailItem: React.FC<accordionDetailItemtype> = ({ title, date, description }) => {
+    const [isLargeScreen] = useMediaQuery('(min-width: 1000px)');
+
     return (
         <>
-            <Text as='b'>{title}</Text>
+            <Text as='b' fontSize={ isLargeScreen ? 'md' : 'sm'}>{title}</Text>
             <Text fontSize='sm'>{date}</Text>
-            <Text mb={3}>{description}</Text>
+            <Text mb={3} fontSize={ isLargeScreen ? 'md' : 'sm'}>{description}</Text>
         </>
     );
 };

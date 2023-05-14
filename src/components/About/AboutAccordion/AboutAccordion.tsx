@@ -1,34 +1,42 @@
 import React from 'react';
 import {
+    Box,
     Accordion,
-    HStack,
-    Text
+    Stack,
+    Text,
+    useMediaQuery
 } from '@chakra-ui/react';
 import AccordionItemWrapper from '../../layout/AccordionItemWrapper';
 import AccordionDetailItem from './AccordionDetailItem';
 
 const AboutAccordion: React.FC = () => {
+    const [isLargeScreen] = useMediaQuery('(min-width: 1000px)');
+
     return (
         <Accordion allowMultiple>
             <AccordionItemWrapper title='Technical Skills'>
-                <HStack gap={3} mb={4}>
-                    <Text as='b' w='25%'>Languages</Text>
-                    <Text>Python, Ruby, Java, Javascript, Typescript, SQL, HTML, CSS</Text>
-                </HStack>
-                <HStack gap={3} mb={4}>
-                    <Text as='b' w='25%'>Framework</Text>
-                    <Text>React, Rails, NodeJS, Express, TailwindCSS, AWS, NextJS</Text>
-                </HStack>
-                <HStack gap={3} mb={4}>
-                    <Text as='b' w='25%'>Processes</Text>
-                    <Text>Git, JIRA, Confluence, Agile, Kanban, Scrum</Text>
-                </HStack>
+                <Stack gap={3} mb={4} fontSize='sm'>
+                    <Box>
+                        <Text as='b' w='25%'>Languages</Text>
+                        <Text>Python, Ruby, Java, Javascript, Typescript, SQL, HTML, CSS</Text>
+                    </Box>
+
+                    <Box>
+                        <Text as='b' w='25%'>Framework</Text>
+                        <Text>React, Rails, NodeJS, Express, TailwindCSS, AWS, NextJS</Text>
+                    </Box>
+
+                    <Box>
+                        <Text as='b' w='25%'>Processes</Text>
+                        <Text>Git, JIRA, Confluence, Agile, Kanban, Scrum</Text>
+                    </Box>
+                </Stack>
             </AccordionItemWrapper>
 
             <AccordionItemWrapper title='Work Experience'>
-                <Text as='b'>Software Engineer</Text>
-                <Text fontSize='sm'>Jan 2022 - Sep2022 <br /> Jun 2023 - Sep2023</Text>
-                <Text mb={4}>Diligent Corporation - Internship</Text>
+                <Text as='b' fontSize={ isLargeScreen ? 'md' : 'sm'}>Software Engineer</Text>
+                <Text fontSize='sm'>Jun 2023 - Sep2023 <br/> Jan 2022 - Sep2022</Text>
+                <Text mb={4} fontSize={ isLargeScreen ? 'md' : 'sm'}>Diligent Corporation - Internship</Text>
 
                 <AccordionDetailItem
                     title='Full Stack Developer'
