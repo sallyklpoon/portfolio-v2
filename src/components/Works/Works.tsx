@@ -20,7 +20,7 @@ const Works: React.FC = () => {
                     alignItems='center'
                 >
                     {
-                        projectsOverviews.map((project) => {
+                        projectsOverviews.slice(0, 6).map((project) => {
                             return (
                                 <ProjectCard project={project} />
                             )

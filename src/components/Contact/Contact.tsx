@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
             <Center>
                 <Stack>
                     <Link href='mailto:sallyklpoon@gmail.com' textTransform='uppercase'>
-                        <Text fontSize='6xl'>sallyklpoon@gmail.com</Text>
+                        <Text fontSize='6xl'>Email</Text>
                     </Link>
                     <Link href='https://github.com/sallyklpoon' isExternal={true}>
                         <Text fontSize='6xl' textTransform='uppercase'>Github</Text>

@@ -1,18 +1,48 @@
 [
     {
+        "name": "YVR Water Monitoring Dashboard",
+        "description": "A data visualization and device management dashboard to visualize water metrics measured by smart devices around Sea Island.",
+        "image_url": "https://i.imgur.com/dFuQau1.png",
+        "link": ""
+
+    }, 
+    {
+        "name": "Pokédex",
+        "description": "A simple Pokédex application with authentication and administrative interface for site analytics tracking.",
+        "image_url": "https://i.imgur.com/Qp8u6ym.png",
+        "link": "https://reliable-malasada-5a34d9.netlify.app/"
+
+    },
+    {
+        "name": "Waddle",
+        "description": "An office culture application with a lot of heart. Collect personally handwritten sticky notes from your colleagues from home.",
+        "image_url": "https://i.imgur.com/bY29TNi.png",
+        "link": "https://github.com/Nosewall/Waddle"
+
+    },
+    {
+        "name": "Pocket Scouts",
+        "description": "An Android application for backpackers that allows travellers to create and join events in their area and rate the location's safety.",
+        "image_url": "https://i.imgur.com/LVPp21b.png",
+        "link": "https://github.com/sallyklpoon/pocket-scouts"
+    },
+    {
         "name": "Sprout",
+        "date": "2021",
         "description": "A social gardening application  to connect with their community and learn more about the ecosystem around them.",
         "image_url": "https://i.imgur.com/dkVAVDF.png",
         "link": "https://github.com/nejohnston/Sprout"
     }, 
     {
         "name": "CapWise",
+        "date": "2021",
         "description": "CapWise introduces a crowd occupancy counter for retail spaces that will make use of counted data for staff scheduling and marketing purposes.",
         "image_url": "https://i.imgur.com/WuRUVT4.png",
         "link": "https://github.com/sallyklpoon/CapWise"
     },
     {
         "name": "Namu",
+        "date": "2021",
         "description": "Featuring in-house made pixel art and 8-bit tunes, this pixel-game takes players on a journey with the baby blue whale, Namu, searching for his home.",
         "image_url": "https://i.imgur.com/YasdYYY.png",
         "link": "https://github.com/sallyklpoon/Namu"

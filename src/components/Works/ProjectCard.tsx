@@ -5,27 +5,41 @@ import {
     CardBody,
     Text,
     Heading,
-    Box
+    Box,
+    useMediaQuery
 } from '@chakra-ui/react'
+import { toast } from 'react-hot-toast';
 
 type projectCardType = {
     project: projectOverviewType;
 }
 
 const ProjectCard: React.FC<projectCardType> = ({ project }) => {
+    const [isLargeScreen] = useMediaQuery('(min-width: 1000px)');
+
     return (
         <Card
-            h='sm'
-            w='sm'
+            h={ isLargeScreen ? 'sm' : 'xs' }
+            w={ isLargeScreen ? 'sm' : 'xs' }
             backgroundColor='whiteAlpha.300'
             _hover={{
-                transform: 'scale(1.1)',
+                cursor: project.link !== ''? 'pointer': 'not-allowed',
+                transform: 'scale(1.05)',
                 transitionDuration: '0.25s',
-                transitionTimingFunction: "ease-in-out"
+                transitionTimingFunction: 'ease-in-out'
             }}
+            onClick={
+                () => {
+                    if (project.link !== '') {
+                        window.open(project.link, '_blank');
+                    } else {
+                        toast.error('This project is unavailable to view!', { icon: '🙈'});
+                    }
+                }
+            }
         >
             <CardHeader>
-                <Heading size='md' textTransform='uppercase'>
+                <Heading size={ isLargeScreen ? 'md' : 'sm'} textTransform='uppercase'>
                     {project.name}
                 </Heading>
             </CardHeader>
