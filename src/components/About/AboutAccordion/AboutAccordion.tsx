@@ -15,7 +15,7 @@ const AboutAccordion: React.FC = () => {
     return (
         <Accordion allowMultiple>
             <AccordionItemWrapper title='Technical Skills'>
-                <Stack gap={3} mb={4} fontSize='sm'>
+                <Stack gap={3} mb={4} fontSize={ isLargeScreen ? 'md' : 'sm'}>
                     <Box>
                         <Text as='b' w='25%'>Languages</Text>
                         <Text>Python, Ruby, Java, Javascript, Typescript, SQL, HTML, CSS</Text>
@@ -35,7 +35,11 @@ const AboutAccordion: React.FC = () => {
 
             <AccordionItemWrapper title='Work Experience'>
                 <Text as='b' fontSize={ isLargeScreen ? 'md' : 'sm'}>Software Engineer</Text>
-                <Text fontSize='sm'>Jun 2023 - Sep2023 <br/> Jan 2022 - Sep2022</Text>
+                <Text fontSize='sm'>Aug 2023 - Present</Text>
+                <Text mb={4} fontSize={ isLargeScreen ? 'md' : 'sm'}>Okta</Text>
+
+                <Text as='b' fontSize={ isLargeScreen ? 'md' : 'sm'}>Software Engineer</Text>
+                <Text fontSize='sm'>Jan 2022 - Sep2022</Text>
                 <Text mb={4} fontSize={ isLargeScreen ? 'md' : 'sm'}>Diligent Corporation - Internship</Text>
 
                 <AccordionDetailItem
