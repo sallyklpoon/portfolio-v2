@@ -10,6 +10,7 @@ import {
     useMediaQuery,
     Stack
 } from '@chakra-ui/react';
+import { theme } from '../../theme/theme';
 
 const Hero: React.FC = () => {
     const [isLargeScreen] = useMediaQuery('(min-width: 1000px)');
@@ -35,10 +36,10 @@ const Hero: React.FC = () => {
                         >
 
                             <GridItem pl='2' area={'greeting'}>
-                                <Text fontSize={'6xl'}>
+                                <Text fontSize={'6xl'} as='b' textTransform='uppercase'>
                                     Hello, I'm
                                 </Text>
-                                <Heading fontSize='6xl'>
+                                <Heading fontSize='6xl' as='b' textTransform='uppercase'>
                                     Sally!
                                 </Heading>
                             </GridItem>
@@ -61,7 +62,7 @@ const Hero: React.FC = () => {
 
                             </GridItem>
 
-                            <GridItem pl='2' area={'title'}>
+                            <GridItem pl='2' area={'title'} textTransform='uppercase'>
                                 <Text fontSize='6xl'>
                                     I'm a Software Engineer based in Vancouver, BC.
                                 </Text>
