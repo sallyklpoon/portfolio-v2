@@ -1,11 +1,8 @@
 import React from 'react';
 import {
-    Grid,
     Text,
     Image,
     Center,
-    GridItem,
-    Heading,
     SlideFade,
     useMediaQuery,
     Stack
