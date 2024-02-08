@@ -22,30 +22,14 @@ const Hero: React.FC = () => {
                         in={true}
                         offsetY='20rem'
                     >
-                        <Grid
-                            m='10'
-                            templateRows='1fr 1fr 2fr 1fr'
-                            templateColumns='2fr 1fr 2fr'
-                            templateAreas={`". . ."
-                            "greeting greeting image"
-                            ".        .        image"
-                            ".        title    title"`}
-                            gap={4}
-                            h='75vh'
-                        >
-
-                            <GridItem pl='2' area={'greeting'}>
-                                <Text fontSize={'6xl'} as='b' textTransform='uppercase'>
-                                    Hello, I'm
+                        <Center mt='20'>
+                            <Stack align='center'>
+                                <Text mb={10} fontSize={'6xl'} as='b'>
+                                    Hello, I'm Sally
                                 </Text>
-                                <Heading fontSize='6xl' as='b' textTransform='uppercase'>
-                                    Sally!
-                                </Heading>
-                            </GridItem>
-
-                            <GridItem pl='2' area={'image'}>
 
                                 <Image
+                                    pl='2'
                                     mb={10}
                                     borderRadius='full'
                                     boxSize='20rem'
@@ -59,14 +43,12 @@ const Hero: React.FC = () => {
                                     }}
                                 />
 
-                            </GridItem>
-
-                            <GridItem pl='2' area={'title'} textTransform='uppercase'>
-                                <Text fontSize='6xl'>
-                                    I'm a Software Engineer based in Vancouver, BC.
+                                <Text fontSize='6xl' align='center' as='abbr'>
+                                    software engineer <br/>
                                 </Text>
-                            </GridItem>
-                        </Grid>
+                                <Text fontSize='3xl' as='abbr'>based in vancouver, bc</Text>
+                            </Stack>
+                        </Center>
                     </SlideFade> :
                     <>
                         <Center mt={20}>
