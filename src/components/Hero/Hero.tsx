@@ -10,7 +10,6 @@ import {
     useMediaQuery,
     Stack
 } from '@chakra-ui/react';
-import { theme } from '../../theme/theme';
 
 const Hero: React.FC = () => {
     const [isLargeScreen] = useMediaQuery('(min-width: 1000px)');

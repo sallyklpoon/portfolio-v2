@@ -18,12 +18,12 @@ const AboutAccordion: React.FC = () => {
                 <Stack gap={3} mb={4} fontSize={ isLargeScreen ? 'md' : 'sm'}>
                     <Box>
                         <Text as='b' w='25%'>Languages</Text>
-                        <Text>Python, Ruby, Java, Javascript, Typescript, SQL, HTML, CSS</Text>
+                        <Text>Python, Ruby, Java, Javascript, Typescript, Golang, SQL, HTML, CSS</Text>
                     </Box>
 
                     <Box>
                         <Text as='b' w='25%'>Framework</Text>
-                        <Text>React, Rails, NodeJS, Express, TailwindCSS, AWS, NextJS</Text>
+                        <Text>React, Rails, NodeJS, Express, TailwindCSS, AWS, Spinnaker, GCP, NextJS</Text>
                     </Box>
 
                     <Box>

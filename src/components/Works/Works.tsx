@@ -17,7 +17,7 @@ const Works: React.FC = () => {
                     maxW='85%'
                     gap={6}
                     wrap='wrap'
-                    alignItems='center'
+                    justifyContent='center'
                 >
                     {
                         projectsOverviews.slice(0, 6).map((project) => {
